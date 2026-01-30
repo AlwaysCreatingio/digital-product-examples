@@ -49,8 +49,8 @@ const Header: React.FC<HeaderProps> = ({ onTagSelect, showBorder = true }) => {
     <>
       {/* Top Banner */}
       {isBannerVisible && (
-        <div className="bg-gradient-to-r from-[#ec4899] to-[#f472b6] text-white py-3 px-4 relative sticky top-0 z-50">
-          <div className="text-center pr-8">
+        <div className="bg-gradient-to-r from-[#ec4899] to-[#f472b6] text-white py-3 px-10 relative sticky top-0 z-50">
+          <div className="text-center">
             <a
               href="https://www.beehiiv.com/features/digital-products"
               target="_blank"
@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ onTagSelect, showBorder = true }) => {
           </div>
           <button
             onClick={closeBanner}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-white/20 rounded transition-colors"
+            className="absolute right-3 top-1/2 -translate-y-1/2 p-1 hover:bg-white/20 rounded transition-colors"
             aria-label="Close banner"
           >
             <X className="w-5 h-5" />
