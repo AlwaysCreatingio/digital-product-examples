@@ -58,7 +58,7 @@ const Header: React.FC<HeaderProps> = ({ onTagSelect, showBorder = true }) => {
               className="text-sm sm:text-base font-medium hover:underline inline-flex items-center gap-2"
             >
               <span className="hidden sm:inline">Sell your own digital products with 0% platform fees</span>
-              <span className="sm:hidden">Sell products with 0% fees</span>
+              <span className="sm:hidden">Sell digital products with 0% fees</span>
               <ArrowRight className="w-4 h-4 hidden sm:block" />
             </a>
           </div>
