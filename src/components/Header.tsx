@@ -55,9 +55,11 @@ const Header: React.FC<HeaderProps> = ({ onTagSelect, showBorder = true }) => {
               href="https://www.beehiiv.com/features/digital-products"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base font-medium hover:underline inline-flex items-center gap-2"
+              className="text-xs sm:text-base font-medium hover:underline inline-flex items-center gap-1 sm:gap-2"
             >
-              Sell your own digital products with 0% platform fees <ArrowRight className="w-4 h-4" />
+              <span className="hidden sm:inline">Sell your own digital products with 0% platform fees</span>
+              <span className="sm:hidden">Sell digital products with 0% fees</span>
+              <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
             </a>
           </div>
           <button
