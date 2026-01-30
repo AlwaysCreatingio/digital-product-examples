@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Product Examples</title>
+    <meta name="description" content="Looking for inspiration? Browse our curated collection of digital product examples ready to inspire your next project." />
+    <link rel="icon" type="image/png" href="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/12d9bd63-515e-473e-a235-26733e697fae/favicon.png?t=1769800145" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Digital Product Examples" />
+    <meta property="og:description" content="Looking for inspiration? Browse our curated collection of digital product examples ready to inspire your next project." />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Digital Product Examples" />
+    <meta name="twitter:description" content="Looking for inspiration? Browse our curated collection of digital product examples ready to inspire your next project." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@700&f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        future: {
+          hoverOnlyWhenSupported: true,
+        },
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Clash Grotesk', 'sans-serif'],
+              body: ['Satoshi', 'sans-serif'],
+              sans: ['Satoshi', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                ink: '#000000',
+                accent: '#ff72e3',
+                button: '#2f39ba',
+                blue: '#ff72e3',
+                purple: '#3843D0',
+                peach: '#FFC8EB',
+                flamingo: '#FF5EC4',
+                blush: '#F092DD',
+                lavender: '#D7D9F6',
+                ethereal: '#0a0a0a',
+                grey: '#9D9EAA',
+                dark: '#0a0a0a',
+              }
+            },
+            backgroundImage: {
+              'gradient-brand': 'linear-gradient(to right, #ff72e3, #3843D0)',
+            },
+            keyframes: {
+              'fade-slide-right': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'typing': {
+                'from': { width: '0' },
+                'to': { width: '100%' }
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              }
+            },
+            animation: {
+              'fade-slide-right': 'fade-slide-right 0.5s ease-out forwards',
+              'typing': 'typing 2s steps(40, end) forwards',
+              'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Hide scrollbar for clean horizontal scrolling if needed */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Button Stack Hover Effect */
+      .btn-stack {
+        position: relative;
+        transition:
+          transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+        transform: translate(0, 0);
+        box-shadow:
+          0 0 0 0 #000000,
+          0 0 0 0 #ff72e3,
+          0 0 0 0 #000000,
+          0 0 0 0 #FFC8EB,
+          0 0 0 0 #000000;
+      }
+
+      .btn-stack::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1), bottom 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      @media (hover: hover) {
+        .btn-stack:hover::after {
+          right: -20px;
+          bottom: -20px;
+        }
+
+        .btn-stack:hover {
+          transform: translate(-12px, -12px);
+          z-index: 20;
+          box-shadow:
+            0 0 0 2px #000000,
+            6px 6px 0 0 #ff72e3,
+            6px 6px 0 2px #000000,
+            12px 12px 0 0 #FFC8EB,
+            12px 12px 0 2px #000000;
+        }
+      }
+
+      .btn-stack.active {
+        transform: translate(-12px, -12px);
+        z-index: 20;
+        box-shadow:
+          0 0 0 2px #000000,
+          6px 6px 0 0 #ff72e3,
+          6px 6px 0 2px #000000,
+          12px 12px 0 0 #FFC8EB,
+          12px 12px 0 2px #000000;
+      }
+
+      body {
+        font-family: 'Satoshi', sans-serif;
+        color: #ffffff;
+        background-color: #000000;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Clash Grotesk', sans-serif;
+      }
+
+      .line-clamp-3 {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      .line-clamp-4 {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 4 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
